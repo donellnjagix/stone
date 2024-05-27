@@ -8,12 +8,12 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div id="aboutus" className="bg-alice-blue py-8">
+    <div id="aboutus" className="bg-white py-8">
       <div className="flex justify-center py-6">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl font-bold">About Us</h1>
           <p className="underline underline-offset-8">
-            Get to know about the company
+            Learn more about Stone Arts
           </p>
         </div>
       </div>
@@ -21,38 +21,8 @@ const About = (props: Props) => {
 
       <section className="md:h-full  py-10 md:pb-0">
         <div className="mx-auto w-5/6 md:h-5/6 md:flex items-center justify-center">
-          {/* description */}
-          <div className="md:basis-3/5 items-center">
-            <p className="text-sm">
-              Travaux Limited was incorporated on 21<sup>st</sup> Jan 2023
-               under the Companies Act, 2015 and the company is a
-              PRIVATE LIMITED COMPANY. This is a duly registered Limited
-              liability company with a certificate of incorporation number{" "}
-              <strong>(PVT- RXU2G68Z)</strong>
-              <br />
-              <br />
-              Today, The company is a general construction entity specializing
-              in building and construction works and other electrical,
-              mechanical, interior, and exterior works.
-              <br />
-              <br />
-              Our Construction Company is a leading provider of construction
-              services in the industry. With a strong track record of delivering
-              high-quality projects, we have established ourselves as a trusted
-              and reliable client partner. Our comprehensive services include
-              residential, commercial, and industrial construction, renovation,
-              and remodeling projects. We take pride in our commitment to
-              excellence, safety, and customer satisfaction, which sets us apart
-              from the competition.
-            </p>
-            <div className="my-8">
-              <button className="rounded-md bg-accent-orange py-2 px-10 transition duration-300 hover:bg-orange-400 text-black">
-                Learn more
-              </button>
-            </div>
-          </div>
           {/* image */}
-          <div className="flex  md:basis-2/5 justify-center md:ml-40 md:-mt-12  md:justify-items-end h-[350px]">
+          <div className="flex  md:basis-2/5 justify-center md:mr-40 md:mt-12  md:justify-items-start h-[350px]">
             <Image
               src={aboutImage}
               alt="about-image"
@@ -60,6 +30,35 @@ const About = (props: Props) => {
               height={150}
               className="object-cover rounded-md"
             />
+          </div>
+          {/* description */}
+          <div className="md:basis-3/5 items-center">
+            <p className="text-sm text-right">
+              Stone Arts could be traced to ancient civilizations of Rome,
+              India as well as Athens in Greece where they made historical
+              statements that couldn't really be matched. Fast forward to the
+              21<sup>st</sup> century, and you will be surprised to see how
+              this has evolved.
+              <br />
+              <br />
+              Today, ancient times are awake again but with modern imitations
+              of what existed then in unrefined forms.
+              <br />
+              <br />
+              We specialize in Mechanical fixing of claddings, Travertine, wall
+              claddings, Marble, Sintered stone, paving, custom-made
+              architectural elements, indoor and outdoor fountains, fireplace
+              and much more.
+              <br />
+              <br />
+              We follow no political boundaries in the case of execution and
+              art.
+            </p>
+            <div className="my-8">
+              <button className="rounded-md bg-#b08d57 py-2 px-10 transition duration-300 hover:bg-orange-400 text-black">
+                Learn more
+              </button>
+            </div>
           </div>
         </div>
       </section>

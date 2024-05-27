@@ -42,13 +42,12 @@ export default function Home() {
    <Homes/>
    </div>
    <About/>
-   <Services/>
+   
    <Mission/>
-   <CoreValues/>
+   
    <WhatsAppButton />
-   <Structure/>
-   <Team/>
-   <ChooseUs/>
+
+   
    <Contact/>
    <Footer/>
     </main>
