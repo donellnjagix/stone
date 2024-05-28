@@ -20,8 +20,8 @@ const Card = ({
   longDescription,
 }: Props) => {
   return (
-    <div className="bg-[#f0d9b3] shadow-md p-4 flex items-center justify-center flex-col gap-2 text-center">
-      <div className="relative h-60 w-full">
+    <div className="bg-[#f0d9b3] shadow-md p-4 flex flex-col items-center justify-between text-center h-96"> {/* Set a fixed height */}
+      <div className="relative h-60 w-full flex-shrink-0"> {/* Ensure image container has a fixed height */}
         {/* Map over the array of image strings and render each image */}
         {image.map((img, index) => (
           <Image
@@ -37,8 +37,8 @@ const Card = ({
           />
         ))}
       </div>
-      <div className="font-bold text-lg text-accent-black">{name}</div>
-      <div className="">{shortDescription}</div>
+      <div className="font-bold text-lg text-accent-black flex-grow">{name}</div> {/* Allow text to take available space */}
+      <div className="flex-grow">{shortDescription}</div> {/* Allow text to take available space */}
       {/* <p className="border bg-[#dde6f5] border-accent-orange py-1 px-6 rounded-md">${price}</p> */}
     </div>
   );

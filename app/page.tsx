@@ -1,5 +1,5 @@
-export const dynamic = 'force-dynamic'
-'use client'
+export const dynamic = 'force-dynamic';
+'use client';
 
 import { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
@@ -15,41 +15,41 @@ import ChooseUs from "./components/choose-us";
 import Contact from "./components/contact";
 import Footer from "./footer";
 import WhatsAppButton from './components/WhatsAppButton';
+import Carousel from "@/app/carousel";
+import { properties } from "./properties"; // Import the properties array
+
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY === 0){
+      if (window.scrollY === 0) {
         setIsTopOfPage(true);
         setSelectedPage(SelectedPage.Home);
       }
-      if(window.scrollY !== 0) return setIsTopOfPage(false);
-    }
+      if (window.scrollY !== 0) return setIsTopOfPage(false);
+    };
     window.addEventListener('scroll', handleScroll);
-    // when the component unmounts [componentwillunmount :)]
     return () => window.removeEventListener('scroll', handleScroll);
-  },[])
+  }, []);
+
   return (
     <main>
       <Navbar
-    isTopOfPage={isTopOfPage}
-    selectedPage={selectedPage}
-    setSelectedPage={setSelectedPage}
-    />
-   <div className="mt-30">
-   <Homes/>
-   </div>
-   <About/>
-   
-   <Mission/>
-   
-   <WhatsAppButton />
-
-   
-   <Contact/>
-   <Footer/>
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
+      <div className="mt-30">
+        <Homes />
+      </div>
+      <About />
+      <Carousel properties={properties} /> {/* Pass the properties array */}
+     
+      <WhatsAppButton />
+      
+      <Footer />
     </main>
   );
 }

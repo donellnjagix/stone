@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/public/images/logo.jpeg";
+import Logo from "@/public/images/logo4.png";
 import Link from "./Link";
 import { SelectedPage } from "@/app/types/types";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
@@ -24,7 +24,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const navBackground = isTopOfPage ? "" : "drop-shadow";
   return (
     <nav>
-      <div className={`${navBackground} fixed top-0 z-30 w-full py-4`} style={{ backgroundColor: '#f0d9b3' }}>
+      <div className={`${navBackground} fixed top-0 z-30 w-full py-4`} style={{ backgroundColor: '#000000' }}>
         <div className={`${flexBetween} mx-auto w-5/6`}>
           {/* left */}
           <a href="#home">
@@ -32,7 +32,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </a>
           {/* right */}
           {isAboveMediaScreens ? (
-            <div className={`${flexBetween} gap-8 text-sm`}>
+            <div className={`${flexBetween} gap-8 text-sm text-white`}>
               <Link
                 page="Home"
                 selectedPage={selectedPage}
@@ -80,7 +80,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </button>
           </div>
           {/* MENU ITEMS */}
-          <div className={`flex flex-col gap-10 ml-[33%] text-2xl`}>
+          <div className={`flex flex-col gap-10 ml-[33%] text-2xl text-white`}>
             <Link
               page="Home"
               selectedPage={selectedPage}

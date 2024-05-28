@@ -10,7 +10,7 @@ type Props = {};
 const Footer = (props: Props) => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="pt-12">
+    <div className="pt-12 bg-black text-white">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
           <Image

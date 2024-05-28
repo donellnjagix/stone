@@ -45,32 +45,148 @@ const Design: React.FC<Props> = (props) => {
   const designs: Array<ClassType> = [
     {
       id: 1,
-      name: "Designs",
-      price: 10,
-      image: [img1.src],
-      shortDescription: "Lorem ipsum dolor sit amet.",
-      longDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
-      propertyType: "House",
-      location: "City A",
-      landSize: "500 sq. ft",
-      selections: 2, // Example value for selections
-      //landSizeOptions: ["Small", "Medium", "Large"] // Example land size options
+      name: "French Pattern Granite",
+      price: 6800,
+      image: ["img1.src"],
+      shortDescription: "French pattern granite paver with a 40mm thickness, ideal for pathways, driveways, and outdoor floors.",
+      longDescription: "French pattern granite paver, available in Royal Brown and Grey patterns. Ideal for modern landscaping designs.",
+      propertyType: "Paver",
+      location: "Outdoor",
+      landSize: "40 mm Pattern",
+      selections: 2
     },
     {
       id: 2,
-      name: "Designs",
-      price: 10,
-      image: [img2.src],
-      shortDescription: "Lorem ipsum dolor sit amet.",
-      longDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
-      propertyType: "Apartment",
-      location: "City B",
-      landSize: "N/A",
-      selections: 1, // Example value for selections
-    //  landSizeOptions: ["Small", "Medium", "Large"] // Example land size options
+      name: "Rombus Paver Granite",
+      price: 5800,
+      image: ["img2.src"],
+      shortDescription: "Rombus pattern granite paver with a 40mm thickness, suitable for various outdoor applications.",
+      longDescription: "Rombus pattern granite paver, available in Royal Brown patterns. Commonly used for pathways, driveways, and outdoor floors.",
+      propertyType: "Paver",
+      location: "Outdoor",
+      landSize: "40 mm Pattern",
+      selections: 2
     },
+    {
+      id: 3,
+      name: "Haring Bone Paver Granite",
+      price: 5800,
+      image: ["img3.src"],
+      shortDescription: "Haring Bone pattern granite paver with a 40mm thickness, suitable for various outdoor applications.",
+      longDescription: "Haring Bone pattern granite paver, available in Royal Brown patterns. Commonly used for pathways, driveways, and outdoor floors.",
+      propertyType: "Paver",
+      location: "Outdoor",
+      landSize: "40 mm Pattern",
+      selections: 2
+    },
+    {
+      id: 4,
+      name: "Royal Brown Granite",
+      price: 5800,
+      image: ["img4.src"],
+      shortDescription: "Royal Brown granite available in both polished and non-polished pieces, ideal for various outdoor applications.",
+      longDescription: "Royal Brown granite, available in 40mm thickness, ideal for pathways, driveways, and outdoor floors. Comes in individual pieces.",
+      propertyType: "Granite",
+      location: "Outdoor",
+      landSize: "40 mm Pattern",
+      selections: 2
+    },
+    {
+      id: 5,
+      name: "Romantic Grey Granite",
+      price: 6800,
+      image: ["img5.src"],
+      shortDescription: "Romantic Grey granite available in both polished and non-polished pieces, suitable for outdoor applications.",
+      longDescription: "Romantic Grey granite, available in 20mm thickness, suitable for pathways, driveways, and outdoor floors. Comes in individual pieces.",
+      propertyType: "Granite",
+      location: "Outdoor",
+      landSize: "20 mm Pattern",
+      selections: 2
+    },
+    {
+      id: 6,
+      name: "Curb Stone & Channel",
+      price: 3600,
+      image: ["img5.src"],
+      shortDescription: "Curb Stone & Channel in Royal Brown, available in various thicknesses.",
+      longDescription: "Curb Stone & Channel in Royal Brown, available in 100x100mm (Curbe Stone) and 40mm (Channel). Ideal for pathways, driveways, outdoor floors, and pool areas.",
+      propertyType: "Stone",
+      location: "Outdoor",
+      landSize: "100x100 mm (Curbe Stone), 40 mm (Channel)",
+      selections: 2
+    },
+    {
+      id: 7,
+      name: "Grating",
+      price: 8600,
+      image: ["img5.src"],
+      shortDescription: "Grating in Royal Brown, suitable for pathways, driveways, outdoor floors, and pool areas.",
+      longDescription: "Grating in Royal Brown, available in 300x600mm size and 40mm thickness. Ideal for pathways, driveways, outdoor floors, and pool areas.",
+      propertyType: "Stone",
+      location: "Outdoor",
+      landSize: "300x600 mm, 40 mm Thick",
+      selections: 2
+    },
+    {
+      id: 8,
+      name: "Galaxy Black Granite",
+      price: 21500,
+      image: ["img5.src"],
+      shortDescription: "Galaxy Black granite, custom cut to 20mm thickness, ideal for various interior and exterior applications.",
+      longDescription: "Galaxy Black granite, custom cut to 20mm thickness. Ideal for kitchen countertops, shelves, door/window frames, dining tables, table tops, vanity tops, shower bases, staircases, floors, and walls.",
+      propertyType: "Granite",
+      location: "Indoor/Outdoor",
+      landSize: "20 mm Thick",
+      selections: 2
+    },
+    {
+      id: 9,
+      name: "Steel Grey Leather Finish Granite",
+      price: 15850,
+      image: ["img5.src"],
+      shortDescription: "Steel Grey Leather Finish granite, custom cut to 20mm thickness, ideal for various interior and exterior applications.",
+      longDescription: "Steel Grey Leather Finish granite, custom cut to 20mm thickness. Ideal for kitchen countertops, shelves, door/window frames, dining tables, table tops, vanity tops, shower bases, staircases, floors, walls, and pool areas.",
+      propertyType: "Granite",
+      location: "Indoor/Outdoor",
+      landSize: "20 mm Thick",
+      selections: 2
+    },
+    {
+      id: 10,
+      name: "Grey Rustic Granite",
+      price: 5800,
+      image: ["img5.src"],
+      shortDescription: "Grey Rustic granite, custom cut to 20mm thickness, suitable for various interior and exterior applications.",
+      longDescription: "Grey Rustic granite, custom cut to 20mm thickness. Ideal for walkways, driveways, parking areas, shower bases, staircases, floors, walls, and pool areas.",
+      propertyType: "Granite",
+      location: "Indoor/Outdoor",
+      landSize: "20 mm Thick",
+      selections: 2
+    },
+    {
+      id: 11,
+      name: "Romantic Rustic Granite",
+      price: 5800,
+      image: ["img5.src"],
+      shortDescription: "Romantic Rustic granite, custom cut to 20mm thickness, suitable for various interior and exterior applications.",
+      longDescription: "Romantic Rustic granite, custom cut to 20mm thickness. Ideal for walkways, driveways, parking areas, shower bases, staircases, floors, walls, and pool areas.",
+      propertyType: "Granite",
+      location: "Indoor/Outdoor",
+      landSize: "20 mm Thick",
+      selections: 2
+    },
+    {
+      id: 12,
+      name: "Grey Granite Cobble",
+      price: 9500,
+      image: ["img5.src"],
+      shortDescription: "Grey granite cobble stone with a 50mm thickness, ideal for pathways and driveways.",
+      longDescription: "Grey granite cobble stone, available in 100x100mm size and 50mm thickness. Ideal for pathways and driveways.",
+      propertyType: "Cobble",
+      location: "Outdoor",
+      landSize: "100x100 mm, 50 mm Thick",
+      selections: 2
+    }
     // Add more design entries with relevant details, including 'selections' and 'landSizeOptions'
   ];
   

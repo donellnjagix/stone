@@ -2,10 +2,10 @@
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import image1 from "@/public/images/banner1.jpg";
-import image2 from "@/public/images/banner2.jpg";
-import image3 from "@/public/images/banner3.jpg";
-import image4 from '@/public/images/banner1.jpg';
+import image1 from "@/public/images/banner/ban1.jpg";
+import image2 from "@/public/images/banner/ban2.jpg";
+import image3 from "@/public/images/banner/ban3.jpg";
+import image4 from '@/public/images/banner/ban4.jpg';
 
 type Props = {};
 
