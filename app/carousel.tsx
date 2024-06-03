@@ -62,7 +62,7 @@ const Carousel = ({ properties }: CarouselProps) => {
 
   return (
     <div>
-      <h2 style={{ textAlign: 'center', color: 'white', background: 'black', padding: '10px' }}>Our Products</h2>
+      <h2 style={{ textAlign: 'center', color: 'black', background: 'white', padding: '10px', fontSize: '2rem', fontWeight: 'bold' }}>Our Products</h2>
       <Slider {...settings}>
         {properties.map(({ id, name, price, image, shortDescription }: ClassType) => (
           <div key={id} className="px-2"> {/* Add padding for white gap */}

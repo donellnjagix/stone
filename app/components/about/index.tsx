@@ -5,7 +5,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/app/types/types";
 import Button from '../Button';
 
-
 type Props = {};
 
 const About = (props: Props) => {
@@ -22,51 +21,46 @@ const About = (props: Props) => {
       {/* <!--About us section--> */}
 
       <section className="md:h-full py-10 md:pb-0">
-  <div className="mx-auto w-5/6 md:h-5/6 md:flex items-center justify-center">
-    {/* image */}
-    <div className="flex md:basis-2/5 justify-center md:mr-40 md:mt-12 md:justify-items-start h-[350px]">
-      <Image
-        src={aboutImage}
-        alt="about-image"
-        width={700}
-        height={150}
-        className="object-cover rounded-md"
-      />
-    </div>
-    {/* description */}
-    <div className="md:basis-3/5 items-center mt-8 md:mt-0 md:ml-8">
-      <p className="text-sm text-right">
-        Stone Arts could be traced to ancient civilizations of Rome,
-        India as well as Athens in Greece where they made historical
-        statements that couldn't really be matched. Fast forward to the
-        21<sup>st</sup> century, and you will be surprised to see how
-        this has evolved.
-        <br />
-        <br />
-        Today, ancient times are awake again but with modern imitations
-        of what existed then in unrefined forms.
-        <br />
-        <br />
-        We specialize in Mechanical fixing of claddings, Travertine, wall
-        claddings, Marble, Sintered stone, paving, custom-made
-        architectural elements, indoor and outdoor fountains, fireplace
-        and much more.
-        <br />
-        <br />
-        We follow no political boundaries in the case of execution and
-        art.
-      </p>
-      <div className="my-8">
-      <Button/>
-
-
-
-      </div>
-    </div>
-  
-  </div>
-</section>
-
+        <div className="mx-auto w-5/6 md:h-5/6 md:flex items-center justify-center">
+          {/* image */}
+          <div className="flex md:basis-2/5 justify-center md:mr-40 md:mt-12 md:justify-items-start h-[350px]">
+            <Image
+              src={aboutImage}
+              alt="about-image"
+              width={700}
+              height={150}
+              className="object-cover rounded-md"
+            />
+          </div>
+          {/* description */}
+          <div className="md:basis-3/5 items-center mt-8 md:mt-0 md:ml-8">
+            <p className="text-sm text-right">
+              Stone Arts could be traced to ancient civilizations of Rome,
+              India as well as Athens in Greece where they made historical
+              statements that couldn't really be matched. Fast forward to the
+              21<sup>st</sup> century, and you will be surprised to see how
+              this has evolved.
+              <br />
+              <br />
+              Today, ancient times are awake again but with modern imitations
+              of what existed then in unrefined forms.
+              <br />
+              <br />
+              We specialize in Mechanical fixing of claddings, Travertine, wall
+              claddings, Marble, Sintered stone, paving, custom-made
+              architectural elements, indoor and outdoor fountains, fireplace
+              and much more.
+              <br />
+              <br />
+              We follow no political boundaries in the case of execution and
+              art.
+            </p>
+            <div className="my-8 flex justify-center">
+              <Button />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
