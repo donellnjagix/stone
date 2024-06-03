@@ -37,7 +37,7 @@ const About = (props: Props) => {
             <p className="text-sm text-right">
               Stone Arts could be traced to ancient civilizations of Rome,
               India as well as Athens in Greece where they made historical
-              statements that couldn't really be matched. Fast forward to the
+              statements that couldn&apos;t really be matched. Fast forward to the
               21<sup>st</sup> century, and you will be surprised to see how
               this has evolved.
               <br />
